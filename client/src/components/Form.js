@@ -8,7 +8,7 @@ const Form = () => {
 
     const handleSubmit=async(e)=>{
         e.preventDefault()
-        const response = await fetch("http://localhost:5000/form/addform",{
+        const response = await fetch("https://form-mailer-back.onrender.com/form/addform",{
           method:"POST",
           headers: {
             'Content-Type': 'application/json',

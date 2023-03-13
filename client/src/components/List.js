@@ -11,7 +11,7 @@ const List = () => {
   }, [])
   
   const fetchform = async()=>{
-    const response = await fetch("http://localhost:5000/form/fetchall",{
+    const response = await fetch("https://form-mailer-back.onrender.com/form/fetchall",{
       method:"GET"
     })
     const result=await response.json()
